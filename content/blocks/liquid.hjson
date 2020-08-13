@@ -1,0 +1,7 @@
+name: "[#999900]Источник жидкости [#ff0000][Чит]"
+size: 1
+hasLiquids: true
+update: true
+solid: true
+outputsLiquid: true
+configurable: true
