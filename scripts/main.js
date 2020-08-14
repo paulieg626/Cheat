@@ -3,4 +3,7 @@ require("blocks/liquid");
 require("blocks/power");
 require("blocks/wall");
 require("blocks/turret");
-print("Загружено: 5 скрипта");
+require("blocks/value");
+print("$$$$$$$$$$$$$$$$$$$");
+print("Загружено: 6 скрипта");
+print("$$$$$$$$$$$$$$$$$$$");
