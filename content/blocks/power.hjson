@@ -1,5 +1,5 @@
 name: "[#999900]Источник энергии [#ff0000][Читы]"
 size: 1
-maxNodes: 100
+maxNodes: 300
 outputsPower: true
 consumesPower: false

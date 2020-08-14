@@ -2,4 +2,5 @@ require("blocks/item");
 require("blocks/liquid");
 require("blocks/power");
 require("blocks/wall");
-print("Загружено: 4 скрипта");
+require("blocks/turret");
+print("Загружено: 5 скрипта");
