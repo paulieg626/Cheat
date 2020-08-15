@@ -4,6 +4,7 @@ require("blocks/power");
 require("blocks/wall");
 require("blocks/turret");
 require("blocks/value");
+require("blocks/magic");
 print("$$$$$$$$$$$$$$$$$$$");
-print("Загружено: 6 скрипта");
+print("Загружено: 7 скрипта");
 print("$$$$$$$$$$$$$$$$$$$");
