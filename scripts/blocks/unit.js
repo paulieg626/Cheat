@@ -14,12 +14,12 @@ Draw.rect("cheat-b",t.x,t.y,10,10,-Time.time()*12+10)
 b.homingRange = 120;
 b.homingPower = 500;
 b.damage = 99999999;
-b.lifetime = 200;
-b.speed = 1;
+b.lifetime = 600;
+b.speed = 8;
 const g = extendContent(Weapon,"g",{});
 g.bullet = b;
-g.range = 500;
-g.reload = 55;
+g.range = 1000;
+g.reload = 10;
 g.width = 19;
 g.alternate = true;
 g.inaccuracy = 8;
