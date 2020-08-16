@@ -6,5 +6,5 @@ update(tile){
     }
 });
 wall.update = true
-wall.health = 99999
+wall.health = 999999999
 wall.requirements(Category.defense,ItemStack.with(Items.copper,0),true);
