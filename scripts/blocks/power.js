@@ -1,3 +1,8 @@
-const power=extendContent(PowerSource,"power", {});
-power.health = 99999
+const power=extendContent(PowerSource,"power", {
+update(tile){
+tile.entity.health = Number.MAX_VALUE
+this.super$update(tile)
+}
+});
+power.health = 999999999
 power.requirements(Category.power,ItemStack.with(Items.copper,0),true);

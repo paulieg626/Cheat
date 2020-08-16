@@ -1,4 +1,9 @@
-const container=extendContent(Vault,"value", {});
-container.health = 99999
+const container=extendContent(Vault,"value", {
+update(tile){
+tile.entity.health = Number.MAX_VALUE
+this.super$update(tile)
+}
+});
+container.health = 999999999
 container.itemCapacity=100000000;
 container.requirements(Category.effect,ItemStack.with(Items.copper,0),true);

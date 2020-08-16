@@ -11,6 +11,10 @@ energyBall.lifetime = 200;
 energyBall.damage = 999999999;
 
 const turret = extendContent(DoubleTurret,"turret",{
+update(tile){
+tile.entity.health = Number.MAX_VALUE
+this.super$update(tile)
+},
  draw(tile){
   Draw.rect("block-1",tile.drawx(),tile.drawy())
   },
@@ -28,5 +32,5 @@ const turret = extendContent(DoubleTurret,"turret",{
 
 turret.range = 500
 turret.reload = 2;
-turret.health = 50000
+turret.health = 999999999
 turret.requirements(Category.turret,ItemStack.with(Items.copper,0),true);

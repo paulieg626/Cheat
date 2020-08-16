@@ -6,7 +6,7 @@ require("blocks/turret");
 require("blocks/value");
 require("blocks/unit");
 require("blocks/magic");
-require("blocks/conveyor");
+require("blocks/conv");
 print("$$$$$$$$$$$$$$$$$$$");
 print("Загружено: 9 скрипта");
 print("$$$$$$$$$$$$$$$$$$$");
