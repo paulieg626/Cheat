@@ -1,0 +1,25 @@
+/*
+Все от https://vk.com/oleglysuhin
+Мод https://vk.com/mindustry_cheat
+*/
+
+//t.entity.health = Number.MAX_VALUE хп востановить
+//t.getTeam() узнать команду блока
+//Call.setTile(Vars.world.tileWorld(x,y,block,команда,поворот)
+//Call.removeTile(Vars.world.tileWorld(x,y)); удалить боок
+//Vars.world.tileWorld(x,y).block(); узнать блок
+//t.entity.items.get(Vars.content.getByName(ContentType.item,"мод-предмет")) кол-во предмета
+//t.entity.items.remove(Vars.content.getByName(ContentType.item,"мод-предмет"), кол-во); удалить предмет
+
+/* Отображение текста
+drawLayer(t){
+font = Fonts.outline;
+ints = font.usesIntegerPositions();
+font.setUseIntegerPositions(false);
+font.getData().setScale(1 / 10 / Scl.scl(1));
+font.draw("Текст",t.drawx()-1,t.drawy()+1)
+font.setUseIntegerPositions(ints);
+font.setColor(Color.red);
+font.getData().setScale(1);
+}
+*/

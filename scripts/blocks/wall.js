@@ -4,5 +4,5 @@ tile.entity.health = Number.MAX_VALUE
 this.super$update(tile)
 }
 });
-wall.health = 999999999
+wall.health = 900000000;
 wall.requirements(Category.defense,ItemStack.with(Items.copper,0),true);

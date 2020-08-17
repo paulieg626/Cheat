@@ -1,0 +1,16 @@
+name: "[#999900]Мега проектор [#ff0000][Чит]"
+size: 1
+range: 500
+reload: 5
+speedBoost:50
+useTime: 300
+phase: #FF9400
+color: #17C50B
+consumes: {
+ items: {
+ items: [copper/0]
+   booster: true
+   optional: true
+  }
+ }
+buildCostMultiplier: 0.0

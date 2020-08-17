@@ -1,0 +1,10 @@
+name: "[#999900]Супер защита [#ff0000][Чит]"
+consumes: {
+   items: {
+   booster:true
+   optional:true
+    items: [
+    copper/0
+    ]
+  }
+}

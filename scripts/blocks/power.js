@@ -4,5 +4,5 @@ tile.entity.health = Number.MAX_VALUE
 this.super$update(tile)
 }
 });
-power.health = 999999999
+power.health = 900000000;
 power.requirements(Category.power,ItemStack.with(Items.copper,0),true);

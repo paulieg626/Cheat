@@ -32,5 +32,5 @@ this.super$update(tile)
 
 turret.range = 500
 turret.reload = 2;
-turret.health = 999999999
+turret.health = 900000000;
 turret.requirements(Category.turret,ItemStack.with(Items.copper,0),true);
