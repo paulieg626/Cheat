@@ -48,7 +48,7 @@ unit = UnitTypes.dagger.create(t.getTeam())
 unit.set(t.drawx(),t.drawy()+8)
 unit.add();
 })).size(size)
-table.addImageButton(new TextureRegionDrawable (Core.atlas.find("revenant")), Styles.clearTransi, image, run(() => {
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("crawler")), Styles.clearTransi, image, run(() => {
 unit = UnitTypes.crawler.create(t.getTeam())
 unit.set(t.drawx(),t.drawy()+8)
 unit.add();
@@ -85,12 +85,23 @@ unit = Vars.content.getByName(ContentType.unit,"cheat-unit").create(t.getTeam())
 unit.set(t.drawx(),t.drawy())
 unit.add();
 })).size(size)
+table.row();
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("cheat-units")), Styles.clearTransi, image, run(() => {})).size(size);
 table.row()
 table.addButton("[#ff0000]Kill", run(() =>{
 Vars.unitGroup.all().each(cons(unit=>unit.kill()))
 })).size(size);
 table.addButton("[#00ff00]Heal", run(() =>{
 Vars.unitGroup.all().each(cons(unit=>unit.heal()))
+})).size(size);
+table.row()
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("cheat-players")), Styles.clearTransi, image, run(() => {})).size(size);
+table.row()
+table.addButton("[#ff4040]Kill", run(() =>{
+Vars.player.kill()
+})).size(size);
+table.addButton("[#40ff40]Heal", run(() =>{
+Vars.player.heal()
 })).size(size);
 },
 update(t){
