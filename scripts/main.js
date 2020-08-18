@@ -9,6 +9,8 @@ require("blocks/magic");
 require("blocks/conv");
 require("blocks/shield");
 require("blocks/project");
+require("blocks/cc");
+
 print("$$$$$$$$$$$$$$$$$$$");
-print("Загружено: 11 скрипта");
+print("Загружено: 12 скрипта");
 print("$$$$$$$$$$$$$$$$$$$");

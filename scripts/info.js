@@ -23,3 +23,13 @@ font.setColor(Color.red);
 font.getData().setScale(1);
 }
 */
+
+//Если хочешь свою, нужно написать new TextureRegionDrawable (Core.atlas.find(имямода-имяспрайта)) картинка
+
+/*
+buildConfiguration(tile, table){
+table.addImageButton(Icon.effect, Styles.clearTransi, run(() => {
+     Действие при нажатии на кнопку
+})).size(50)
+}
+*/

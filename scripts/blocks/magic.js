@@ -1,39 +1,103 @@
 const magic=extendContent(Vault,"magic", {
-update(t){
-t.entity.health = Number.MAX_VALUE
-if(t.entity.items.get(Vars.content.getByName(ContentType.item,"coal"))>=1){
-for(i=0;i<=99;i++){
-unit = UnitTypes.lich.create(t.getTeam())
-unit.set(t.drawx(),t.drawy())
-unit.add();
-}
-t.entity.items.remove(Vars.content.getByName(ContentType.item,"coal"),1)
-}
-if(t.entity.items.get(Vars.content.getByName(ContentType.item,"sand"))>=1){
-for(i=0;i<=99;i++){
+buildConfiguration(t, table){
+size = 75;
+image = 50;
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("draug")), Styles.clearTransi, image, run(() => {
 unit = UnitTypes.draug.create(t.getTeam())
 unit.set(t.drawx(),t.drawy())
 unit.add();
-}
-t.entity.items.remove(Vars.content.getByName(ContentType.item,"sand"),1)
-}
-if(t.entity.items.get(Vars.content.getByName(ContentType.item,"copper"))>=1){
-for(i=0;i<=99;i++){
+})).size(size)
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("spirit")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.spirit.create(t.getTeam())
+unit.set(t.drawx(),t.drawy())
+unit.add();
+})).size(size)
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("phantom")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.phantom.create(t.getTeam())
+unit.set(t.drawx(),t.drawy())
+unit.add();
+})).size(size)
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("wraith")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.wraith.create(t.getTeam())
+unit.set(t.drawx(),t.drawy())
+unit.add();
+})).size(size)
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("ghoul")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.ghoul.create(t.getTeam())
+unit.set(t.drawx(),t.drawy())
+unit.add();
+})).size(size)
+table.row()
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("revenant")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.revenant.create(t.getTeam())
+unit.set(t.drawx(),t.drawy())
+unit.add();
+})).size(size)
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("lich")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.lich.create(t.getTeam())
+unit.set(t.drawx(),t.drawy())
+unit.add();
+})).size(size)
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("reaper")), Styles.clearTransi, image, run(() => {
 unit = UnitTypes.reaper.create(t.getTeam())
 unit.set(t.drawx(),t.drawy())
 unit.add();
-}
-t.entity.items.remove(Vars.content.getByName(ContentType.item,"copper"),1)
-}
-if(t.entity.items.get(Vars.content.getByName(ContentType.item,"thorium"))>=1){
-for(i=0;i<=9;i++){
+})).size(size)
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("dagger")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.dagger.create(t.getTeam())
+unit.set(t.drawx(),t.drawy()+8)
+unit.add();
+})).size(size)
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("revenant")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.crawler.create(t.getTeam())
+unit.set(t.drawx(),t.drawy()+8)
+unit.add();
+})).size(size)
+table.row()
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("titan")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.titan.create(t.getTeam())
+unit.set(t.drawx(),t.drawy()+8)
+unit.add();
+})).size(size)
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("fortress")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.fortress.create(t.getTeam())
+unit.set(t.drawx(),t.drawy()+8)
+unit.add();
+})).size(size)
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("eruptor")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.eruptor.create(t.getTeam())
+unit.set(t.drawx(),t.drawy()+8)
+unit.add();
+})).size(size)
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("chaos-array")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.chaosArray.create(t.getTeam())
+unit.set(t.drawx(),t.drawy()+8)
+unit.add();
+})).size(size)
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("eradicator")), Styles.clearTransi, image, run(() => {
+unit = UnitTypes.eradicator.create(t.getTeam())
+unit.set(t.drawx(),t.drawy()+8)
+unit.add();
+})).size(size)
+table.row()
+table.addImageButton(new TextureRegionDrawable (Core.atlas.find("cheat-unit")), Styles.clearTransi, image, run(() => {
 unit = Vars.content.getByName(ContentType.unit,"cheat-unit").create(t.getTeam())
 unit.set(t.drawx(),t.drawy())
 unit.add();
-}
-t.entity.items.remove(Vars.content.getByName(ContentType.item,"thorium"),1)
-}
+})).size(size)
+table.row()
+table.addButton("[#ff0000]Kill", run(() =>{
+Vars.unitGroup.all().each(cons(unit=>unit.kill()))
+})).size(size);
+table.addButton("[#00ff00]Heal", run(() =>{
+Vars.unitGroup.all().each(cons(unit=>unit.heal()))
+})).size(size);
+},
+update(t){
+t.entity.health = Number.MAX_VALUE
 }});
+magic.solid = true;
+magic.configurable = true;
 magic.layer = Layer.turret
 magic.update = true;
 magic.health = 900000000;

@@ -29,7 +29,7 @@ this.super$update(tile)
   ]
  }
 });
-
+turret.itemCapacity=100000000;
 turret.range = 500
 turret.reload = 2;
 turret.health = 900000000;
