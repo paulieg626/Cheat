@@ -1,1 +1,6 @@
 name: "[#999900]Магический верстак [#ff0000][Чит]"
+alwaysUnlocked:true
+category:effect
+requirements:[
+copper/0
+]

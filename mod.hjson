@@ -4,3 +4,4 @@ description:"[green]Добавляет разные штуки для читов
 author:"[blue]paulieg626"
 version:"1.7"
 dependencies:[]
+minGameVersion: "105"

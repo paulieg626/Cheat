@@ -8,3 +8,8 @@ consumes: {
     ]
   }
 }
+alwaysUnlocked:true
+category:effect
+requirements:[
+copper/0
+]

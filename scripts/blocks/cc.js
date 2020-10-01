@@ -1,13 +1,21 @@
-const cc = extendContent(Block, "cc", {
-update(t){
-t.entity.health = Number.MAX_VALUE
-c = Vars.state.teams.closestCore(t.drawx(), t.drawy(), t.getTeam());
-for(y = 0; y < Vars.content.items().size; y++){
-i = Vars.content.items().get(y);
-if(c.items.get(i) < 900000000){
-c.items.add(i, 10000000)
-}
-}
-}});
+const cc = extendContent(Block, "cc", {});
 cc.update = true;
-cc.requirements(Category.effect,ItemStack.with(Items.copper,0),true);
+cc.entityType = prov(()=>extend(Building,{
+  updateTile(){
+    print("1")
+    this.health = Number.MAX_VALUE;
+    print("2")
+    c = Vars.state.teams.closestCore(this.getX(), thus.getY(), t.team);
+    print("3")
+    for(y = 0; y < Vars.content.items().size; y++){
+      print("4")
+      i = Vars.content.items().get(y);
+      print("5")
+      if(this.items.get(i) < 900000000){
+        print("6")
+        this.items.add(i, 10000000)
+        print("7")
+      }
+    }
+  }
+}))

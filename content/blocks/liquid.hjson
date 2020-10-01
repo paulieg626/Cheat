@@ -5,3 +5,8 @@ update: true
 solid: true
 outputsLiquid: true
 configurable: true
+alwaysUnlocked:true
+category:liquid
+requirements:[
+copper/0
+]

@@ -3,6 +3,7 @@
 Мод https://vk.com/mindustry_cheat
 */
 
+//if(Vars.player.isAdmin){} проверка админа
 //t.entity.health = Number.MAX_VALUE хп востановить
 //t.getTeam() узнать команду блока
 //Call.setTile(Vars.world.tileWorld(x,y,block,команда,поворот)
@@ -24,7 +25,7 @@ font.getData().setScale(1);
 }
 */
 
-//Если хочешь свою, нужно написать new TextureRegionDrawable (Core.atlas.find(имямода-имяспрайта)) картинка
+//new TextureRegionDrawable (Core.atlas.find(имямода-имяспрайта)) картинка
 
 /*
 buildConfiguration(tile, table){

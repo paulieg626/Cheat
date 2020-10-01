@@ -2,3 +2,8 @@ name: "[#999900]Убийственная турель [#ff0000][Чит]"
 targetAir: true
 targetGround: true
 size: 1
+alwaysUnlocked:true
+category:turret
+requirements:[
+copper/0
+]

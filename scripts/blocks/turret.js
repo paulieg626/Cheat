@@ -1,4 +1,3 @@
-color = new Color();
 const energyBall = extend(BasicBulletType,{
  draw(b){
  Draw.rect("cheat-b",b.x,b.y,20,20,Time.time()*12+10)
@@ -10,7 +9,7 @@ energyBall.speed = 4;
 energyBall.lifetime = 200;
 energyBall.damage = 999999999;
 
-const turret = extendContent(DoubleTurret,"turret",{
+const turret = extendContent(ItemTurret,"turret",{
 update(tile){
 tile.entity.health = Number.MAX_VALUE
 this.super$update(tile)
@@ -33,4 +32,3 @@ turret.itemCapacity=100000000;
 turret.range = 500
 turret.reload = 2;
 turret.health = 900000000;
-turret.requirements(Category.turret,ItemStack.with(Items.copper,0),true);

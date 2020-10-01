@@ -1,2 +1,7 @@
 name: "[#999900]Бесконечный контейнер [#ff0000][Чит]"
 size: 1
+alwaysUnlocked:true
+category:effect
+requirements:[
+copper/0
+]

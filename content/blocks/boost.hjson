@@ -4,8 +4,6 @@ range: 500
 reload: 5
 speedBoost:50
 useTime: 300
-phase: #FF9400
-color: #17C50B
 consumes: {
  items: {
  items: [copper/0]
@@ -14,3 +12,8 @@ consumes: {
   }
  }
 buildCostMultiplier: 0.0
+alwaysUnlocked:true
+category:effect
+requirements:[
+copper/0
+]

@@ -5,3 +5,8 @@ update: true
 solid: true
 group: transportation
 configurable: true
+alwaysUnlocked:true
+category:distribution
+requirements:[
+copper/0
+]

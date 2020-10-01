@@ -3,3 +3,8 @@ size: 1
 maxNodes: 300
 outputsPower: true
 consumesPower: false
+alwaysUnlocked:true
+category:power
+requirements:[
+copper/0
+]

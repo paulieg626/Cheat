@@ -10,4 +10,3 @@ shield.radius = 200;
 shield.size = 1;
 shield.health = 900000000;
 shield.itemCapacity = 100;
-shield.requirements(Category.effect,ItemStack.with(Items.copper,0),true);
