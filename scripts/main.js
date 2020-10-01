@@ -1,4 +1,5 @@
-//Block
+//Block
+
 require("blocks/liquid");
 require("blocks/power");
 require("blocks/wall");
@@ -7,7 +8,7 @@ require("blocks/value");
 require("blocks/magic");
 require("blocks/conv");
 require("blocks/shield");
-require("blocks/project");
+//require("blocks/project");
 require("blocks/cc");
 require("blocks/item");
 
