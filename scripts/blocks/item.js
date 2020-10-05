@@ -1,6 +1,6 @@
 const item=extendContent(ItemSource,"item", {
-update(tile){
-tile.entity.health = Number.MAX_VALUE
+update(){
+this.health = Number.MAX_VALUE
 }
 });
 item.update = true;

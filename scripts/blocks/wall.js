@@ -1,6 +1,6 @@
 const wall = extendContent(Wall, "wall", {
-update(t){
-t.entity.health = Number.MAX_VALUE
+update(){
+this.entity.health = Number.MAX_VALUE
 }
 });
 wall.update = true;

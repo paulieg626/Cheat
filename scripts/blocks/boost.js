@@ -1,7 +1,7 @@
 const project = extendContent(OverdriveProjector, "boost", {
-update(tile){
-tile.entity.health = Number.MAX_VALUE
-this.super$update(tile)
+update(){
+this.entity.health = Number.MAX_VALUE
 }
 });
+project.update = true;
 project.health = 900000000;

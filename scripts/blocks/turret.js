@@ -1,11 +1,11 @@
 const energyBall = extend(BasicBulletType,{
  draw(b){
- Draw.rect("cheat-b",b.x,b.y,20,20,Time.time()*12+10)
+ Draw.rect("cheat-b",b.x,b.y,5,5,Time.time()*12+10)
  }
 });
 energyBall.shootEffect = Fx.none;
 energyBall.smokeEffect = Fx.none;
-energyBall.speed = 4;
+energyBall.speed = 5;
 energyBall.lifetime = 200;
 energyBall.damage = 999999999;
 
@@ -30,5 +30,5 @@ this.super$update(tile)
 });
 turret.itemCapacity=100000000;
 turret.range = 500
-turret.reload = 2;
+turret.reload = 1;
 turret.health = 900000000;

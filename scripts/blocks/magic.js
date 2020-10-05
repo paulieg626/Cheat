@@ -1,26 +1,26 @@
-const magic=extendContent(StorageBlock,"magic", {
-add(b, table, t){
+const magic=extendContent(Wall,"magic", {
+add(b, table){
 button = table.addImageButton(new TextureRegionDrawable(Vars.content.units().get(b).icon(Cicon.small)), Styles.clearFulli, 50, run(() => {
 u = Vars.content.units().get(b);
-unit = u.create(t.getTeam());
-unit.set(t.drawx(), t.drawy()+8);
+unit = u.create(this.getTeam());
+unit.set(this.drawx(), this.drawy()+8);
 unit.add();
 })).size(75)
 },
-buildConfiguration(t, table){
+buildConfiguration(table){
 size = 75;
 image = 50;
 for(b = 0; b <= Vars.content.units().size; b++){
 if(b<Vars.content.units().size){
-this.add(b, table, t);
+this.add(b, table);
 if(b % 6 == 5){
 table.row()
 }}else{
 table.addImageButton(new TextureRegionDrawable (Core.atlas.find("cheat-unit-all")), Styles.clearTransi, image, run(() => {
 for(o = 0; o < Vars.content.units().size; o++){
 u = Vars.content.units().get(o);
-unit = u.create(t.getTeam());
-unit.set(t.drawx(), t.drawy()+8);
+unit = u.create(this.getTeam());
+unit.set(this.drawx(), this.drawy()+8);
 unit.add();
 }
 })).size(size);
@@ -44,8 +44,8 @@ table.addButton("[#40ff40]Heal", run(() =>{
 Vars.player.heal()
 })).size(size);
 },
-update(t){
-t.entity.health = Number.MAX_VALUE
+update(){
+this.entity.health = Number.MAX_VALUE
 }});
 magic.solid = true;
 magic.configurable = true;
