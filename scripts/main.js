@@ -1,5 +1,4 @@
 //Block
-
 require("blocks/liquid");
 require("blocks/power");
 require("blocks/wall");
@@ -16,5 +15,7 @@ require("blocks/item");
 //require("units/unit");
 
 print("$$$$$$$$$$$$$$$$$$$");
-print("Загружено: 12 скрипта");
+print("Загружено: 11 скрипта");
+print("Mindustry Cheat Mod");
+print("by paulieg626");
 print("$$$$$$$$$$$$$$$$$$$");

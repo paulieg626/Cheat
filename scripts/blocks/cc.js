@@ -1,11 +1,14 @@
-const cc = extendContent(Wall, "cc", {
+const cc = extendContent(Wall, "cc", {});
+cc.buildType = () => extend(Building, {
 update(){
-    this.entity.health = Number.MAX_VALUE
-    c = Vars.state.teams.closestCore(this.getX(), this.getY(), this.team);
+    var x = this.x;
+    var y = this.y;
+    var core = Vars.state.teams.closestCore(x, y, this.team)
+    var coreBlock = Vars.world.tileWorld(core.x, core.y)
     for(y = 0; y < Vars.content.items().size; y++){
-      i = Vars.content.items().get(y);
-      if(this.items.get(i) < 900000000){
-        this.items.add(i, 10000000)
+      var i = Vars.content.items().get(y);
+      if(core.items.get(i) < 900000000){
+        core.items.add(i, 10000000)
       }
      }
 }
