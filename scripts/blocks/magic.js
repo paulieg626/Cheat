@@ -35,8 +35,11 @@ m.buildType = prov(() => extend(Building,{
         }
       };
       table.row();
-      table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-" +"close")), Styles.clearFulli, 30, run(() => {
+      table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-" +"kill")), Styles.clearFulli, 30, run(() => {
         Groups.unit.each(cons(unit => unit.kill()))
+      })).size(40);
+      table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-" +"clear")), Styles.clearFulli, 30, run(() => {
+        this.unitAll = [];
       })).size(40);
       table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-" +"play")), Styles.clearFulli, 30, run(() => {
         for(var b = 0; b < this.unitAll.length; b++){
