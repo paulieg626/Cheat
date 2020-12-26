@@ -1,8 +1,4 @@
-const energyBall = extend(BasicBulletType,{
- draw(b){
- Draw.rect("cheat-b",b.x,b.y,5,5,Time.time()*12+10)
- }
-});
+const energyBall = extend(BasicBulletType,{});
 energyBall.shootEffect = Fx.none;
 energyBall.smokeEffect = Fx.none;
 energyBall.speed = 5;
