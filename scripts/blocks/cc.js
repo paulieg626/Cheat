@@ -1,4 +1,5 @@
 const cc = extendContent(Wall, "cc", {});
+
 cc.buildType = () => extend(Building, {
 update(){
     var x = this.x;
@@ -10,6 +11,10 @@ update(){
       if(core.items.get(i) < 900000000){
         core.items.add(i, 10000000)
       }
+     }
+     for(y = 0; y < Vars.content.liquids().size; y++){
+       var i = Vars.content.liquids().get(y);
+       this.liquids.add(i,1)
      }
 }
 });

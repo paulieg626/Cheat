@@ -1,7 +1,7 @@
-displayName:"[#ff0000]Читерский мод"
+displayName:"Читерский мод"
 name:"cheat"
-description:"[green]Добавляет разные штуки для читов\nhttps://vk.com/mindustry_cheat"
-author:"[blue]paulieg626"
-version:"1.9"
+description:"Добавляет разные штуки для читов\nhttps://vk.com/mindustry_cheat"
+author:"paulieg626"
+version:"2.0"
 dependencies:[]
-minGameVersion: 105
+minGameVersion: 122
