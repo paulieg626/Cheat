@@ -11,11 +11,9 @@ require("blocks/boost");
 require("blocks/cc");
 require("blocks/item");
 
-//Unit
-//require("units/unit");
-
+print("");
 print("$$$$$$$$$$$$$$$$$$$");
-print("Загружено: 11 скрипта");
-print("Mindustry Cheat Mod");
+print("Mindustry CheatMod");
 print("by paulieg626");
 print("$$$$$$$$$$$$$$$$$$$");
+print("");
