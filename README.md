@@ -1,4 +1,4 @@
-# Cheat [MindustryBE Mod] 
+# Cheat [Mindusty 6.0 Mod] 
 
 `paulieg626/Cheat`
 
