@@ -19,7 +19,7 @@ const turret = extendContent(ItemTurret,"turret",{
 });
 turret.buildType = prov(()=>extend(ItemTurret.ItemTurretBuild,turret,{
   updateTile(){
-    this.handleLiquid(this,Vars.content.getByName(ContentType.liquid, "cheat-x50"),1)
+    this.handleLiquid(this,Vars.content.getByName(ContentType.liquid, "cheat-x250"),1)
     this.handleItem(this,Items.copper)
     this.health = Number.MAX_VALUE;
     this.super$updateTile();
@@ -31,4 +31,5 @@ turret.buildType = prov(()=>extend(ItemTurret.ItemTurretBuild,turret,{
 turret.itemCapacity=100000000;
 turret.range = 500;
 turret.reload = 1;
+turret.shots = 5;
 turret.health = 900000000;
