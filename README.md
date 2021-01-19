@@ -18,4 +18,4 @@ Ru:
 
 - Создавайте юнитов, которые хотите!!!
 
-- [Cheat VK](https://vk.com/mindustry_cheat)
+- [Чит ВК](https://vk.com/mindustry_cheat)
