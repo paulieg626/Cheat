@@ -1,0 +1,36 @@
+name: Unit CHEATS
+type: naval
+targetAir: true
+targetGround: true
+speed: 5
+flying: true
+hitSize: 1
+armor: 500000
+health: 99999999
+rotateSpeed: 12
+commandLimit: 20
+range: 100
+weapons:[
+{
+name: weapon1
+  x: 0
+  y: 0
+  reload: 1
+  ejectEffect: none
+  shootSound: laser
+  rotate: true
+  shots:1
+  bullet: {
+    type: ShrapnelBulletType
+    damage: 40000
+    shootEffect: teleport
+    despawnEffect: lava
+    width: 0.5
+    lifetime: 50
+    knockback: 0.1
+    splashDamageRadius: 25
+    splashDamage: 33
+    serrations: 70
+    length: 1000
+}}
+]

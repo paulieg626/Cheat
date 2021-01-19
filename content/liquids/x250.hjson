@@ -1,8 +1,7 @@
-name:"[red]x250 [green]BOOST"
-description:"[red]Супер ускорялка!"
-temperature:0
-flammability: 0
+name:"[red]x250 [green]Acceleration"
+temperature:249
+flammability: 249
 heatCapacity:249
-viscosity:0
-explosiveness:0
-color:"#25128D"
+viscosity:249
+explosiveness:249
+color:"#ff25128D"
