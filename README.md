@@ -8,7 +8,7 @@ En:
 
 - Spawn units who you want!!!
 
-- [Cheat VK](https://vk.com/mindustry_cheat)
+- [Cheat on VKontakte](https://vk.com/mindustry_cheat)
 
 Ru:
 
@@ -18,4 +18,4 @@ Ru:
 
 - Создавайте юнитов, которые хотите!!!
 
-- [Чит ВК](https://vk.com/mindustry_cheat)
+- [Чит в ВКонтакте](https://vk.com/mindustry_cheat)
