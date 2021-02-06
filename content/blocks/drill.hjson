@@ -9,3 +9,4 @@ rotateSpeed:1
 requirements:[copper/0]
 category:production
 hardnessDrillMultiplier: 0
+alwaysUnlocked:true
