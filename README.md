@@ -1,6 +1,5 @@
 # Cheat [Mindusty 6.0 Mod] 
-[![HitCount](http://hits.dwyl.com/paulieg626/https://githubcom/paulieg626/ambilwarna.svg)](http://hits.dwyl.com/paulieg626/https://githubcom/paulieg626/ambilwarna)
-
+[![HitCount](http://hits.dwyl.com/paulieg626/https://githubcom/paulieg626/Cheat.svg)](http://hits.dwyl.com/paulieg626/https://githubcom/paulieg626/Cheat)
 
 En:
 
