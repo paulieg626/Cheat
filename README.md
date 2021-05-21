@@ -1,4 +1,4 @@
-# Cheat [Mindusty 6.0 Mod] 
+### Cheat [Mindusty 6.0 Mod] 
 [![CheatMod Icon](https://raw.githubusercontent.com/paulieg626/Cheat/master/icon.png)]()
 
 En:
