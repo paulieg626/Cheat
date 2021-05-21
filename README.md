@@ -1,5 +1,5 @@
 # Cheat [Mindusty 6.0 Mod] 
-[![HitCount](http://hits.dwyl.com/paulieg626/https://githubcom/paulieg626/Cheat.svg)](http://hits.dwyl.com/paulieg626/https://githubcom/paulieg626/Cheat)
+[![CheatMod Icon](https://raw.githubusercontent.com/paulieg626/Cheat/master/icon.png)]()
 
 En:
 
