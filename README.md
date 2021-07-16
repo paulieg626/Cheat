@@ -9,8 +9,6 @@ En:
 
 - Spawn units who you want!!!
 
-- [Cheat on VKontakte](https://vk.com/mindustry_cheat)
-
 Ru:
 
 `Скачать: paulieg626/Cheat`
@@ -19,4 +17,8 @@ Ru:
 
 - Создавайте юнитов, которые хотите!!!
 
-- [Чит в ВКонтакте](https://vk.com/mindustry_cheat)
+Url:
+
+[Cheat on VKontakte](https://vk.com/mindustry_cheat)
+
+[![Join our Discord server!](https://invidget.switchblade.xyz/xxzHdKvTsm)](https://discord.gg/xxzHdKvTsm)
