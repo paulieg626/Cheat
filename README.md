@@ -21,4 +21,4 @@ Url:
 
 [Cheat on VKontakte](https://vk.com/mindustry_cheat)
 
-[![Join our Discord server!](https://invidget.switchblade.xyz/xxzHdKvTsm)](https://discord.gg/xxzHdKvTsm)
+[![Join our Discord server!](https://invidget.switchblade.xyz/UJyZWayvGH)](https://discord.gg/UJyZWayvGH)
