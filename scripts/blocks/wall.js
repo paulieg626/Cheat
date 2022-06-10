@@ -1,4 +1,4 @@
-const wall = extendContent(Wall, "wall", {
+const wall = extend(Wall, "wall", {
 update(){
 this.entity.health = Number.MAX_VALUE
 }

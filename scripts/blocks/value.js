@@ -1,4 +1,4 @@
-const container = extendContent(StorageBlock,"value", {
+const container = extend(StorageBlock,"value", {
 update(tile){
 tile.entity.health = Number.MAX_VALUE
 }

@@ -23,7 +23,7 @@ energyBall.fragBullet = c;
 p.fragBullets = 3;
 c.fragBullet = p;
 
-const turret = extendContent(ItemTurret,"turret",{
+const turret = extend(ItemTurret,"turret",{
  init(){
   this.ammo(Vars.content.getByName(ContentType.item, "copper"), energyBall,1);
   this.super$init();
@@ -36,7 +36,7 @@ const turret = extendContent(ItemTurret,"turret",{
  }
 });
 turret.buildType = prov(()=>extend(ItemTurret.ItemTurretBuild,turret,{
-  updateTile(){
+  update(){
     this.handleLiquid(this,Vars.content.getByName(ContentType.liquid, "cheat-x250"),1)
     this.handleItem(this,Items.copper)
     this.health = Number.MAX_VALUE;

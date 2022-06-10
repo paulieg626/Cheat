@@ -1,9 +1,9 @@
-const skip = extendContent(Block, "skip", {});
+const skip = extend(Block, "skip", {});
 
 skip.buildType = () => extend(Building, {
 update(){},
 buildConfiguration(table) {
-table.button(new TextureRegionDrawable(Core.atlas.find("cheat-play")), Styles.clearFulli, 30, run(() => {
+table.button(new TextureRegionDrawable(Core.atlas.find("cheat-play")), Styles.defaulti, 30, run(() => {
 const dialog = new BaseDialog("[pink]Скип волн");
 dialog.setFillParent(false);
 const text = new Label("[red]1");

@@ -4,7 +4,7 @@ require("blocks/power");
 require("blocks/wall");
 require("blocks/turret");
 require("blocks/value");
-require("blocks/magic");
+//require("blocks/magic"); off
 require("blocks/conv");
 require("blocks/shield");
 require("blocks/boost");

@@ -1,4 +1,4 @@
-const conveyor=extendContent(Conveyor,"conv", {
+const conveyor=extend(Conveyor,"conv", {
 update(tile){
 tile.entity.health = Number.MAX_VALUE
 this.super$update(tile)

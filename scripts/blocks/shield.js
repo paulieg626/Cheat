@@ -1,4 +1,4 @@
-const shield = extendContent(ForceProjector,"shield", {
+const shield = extend(ForceProjector,"shield", {
 update(tile){
 tile.entity.health = Number.MAX_VALUE
 this.super$update(tile)

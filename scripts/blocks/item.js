@@ -1,4 +1,4 @@
-const item=extendContent(ItemSource,"item", {
+const item=extend(ItemSource,"item", {
 update(){
 this.health = Number.MAX_VALUE
 }

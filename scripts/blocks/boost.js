@@ -1,4 +1,4 @@
-const project = extendContent(OverdriveProjector, "boost", {
+const project = extend(OverdriveProjector, "boost", {
 update(){
 this.entity.health = Number.MAX_VALUE
 }

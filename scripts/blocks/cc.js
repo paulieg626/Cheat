@@ -1,4 +1,4 @@
-const cc = extendContent(Block, "cc", {});
+const cc = extend(Block, "cc", {});
 cc.buildType = () => extend(Building, {
 update(){
     var x = this.x;
