@@ -1,0 +1,19 @@
+name: "[#999900]Mega projector [#ff0000][Cheat]"
+size: 1
+range: 500
+reload: 5
+speedBoost:50
+useTime: 300
+consumes: {
+ items: {
+ items: [copper/0]
+   booster: true
+   optional: true
+  }
+ }
+buildCostMultiplier: 0.0
+alwaysUnlocked:true
+category:effect
+requirements:[
+]
+research: cheat-wall

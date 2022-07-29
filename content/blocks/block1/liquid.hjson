@@ -1,0 +1,12 @@
+name: "[#999900]Liquid source [#ff0000][Cheat]"
+size: 1
+hasLiquids: true
+update: true
+solid: true
+outputsLiquid: true
+configurable: true
+alwaysUnlocked:true
+category:liquid
+requirements:[
+]
+research: cheat-wall

@@ -1,9 +1,0 @@
-name: "[#999900]Killing turret [#ff0000][Cheat]"
-targetAir: true
-targetGround: true
-size: 1
-alwaysUnlocked:true
-category:turret
-requirements:[
-copper/0
-]

@@ -1,0 +1,14 @@
+name:"[#999900]Speed ​​drill [#ff0000][Cheat]"
+type:"Drill"
+size:1
+health:9999999
+tier:90
+drillTime:1
+itemCapacity:300
+rotateSpeed:1
+requirements:[
+]
+category:production
+hardnessDrillMultiplier: 0
+alwaysUnlocked:true
+research: cheat-wall

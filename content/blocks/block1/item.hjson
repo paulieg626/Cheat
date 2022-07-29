@@ -1,0 +1,12 @@
+name: "[#999900]Item source [#ff0000][Cheat]"
+size: 1
+hasItems: true
+update: true
+solid: true
+group: transportation
+configurable: true
+alwaysUnlocked:true
+category:distribution
+requirements:[
+]
+research: cheat-wall

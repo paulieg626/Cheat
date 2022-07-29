@@ -1,0 +1,10 @@
+name: "[#999900]Energy source[#ff0000][Cheat]"
+size: 1
+maxNodes: 300
+outputsPower: true
+consumesPower: false
+alwaysUnlocked:true
+category:power
+requirements:[
+]
+research: cheat-wall

@@ -23,7 +23,7 @@ energyBall.fragBullet = c;
 p.fragBullets = 3;
 c.fragBullet = p;
 
-const turret = extend(ItemTurret,"turret",{
+const turret = extend(ItemTurret,"turret2",{
  init(){
   this.ammo(Vars.content.getByName(ContentType.item, "copper"), energyBall,1);
   this.super$init();
