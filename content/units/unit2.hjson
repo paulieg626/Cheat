@@ -8,7 +8,7 @@ hitSize: 1
 armor: 500000
 health: 99999999
 rotateSpeed: 12
-commandLimit: 20
+//commandLimit: 20
 range: 100
 weapons:[
 {
@@ -19,7 +19,7 @@ name: weapon1
   ejectEffect: none
   shootSound: laser
   rotate: true
-  shots:1
+//  shots:1
   bullet: {
     type: ShrapnelBulletType
     damage: 40000

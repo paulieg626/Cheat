@@ -17,60 +17,76 @@ m.buildType = prov(() => extend(Building,{
     spawnY: 0,
     unitAll: [],
     addButtonTeam(i, table){
-      table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-" + i)), Styles.defaulti, 30, run(() => {
+      table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-" + i)), Styles.clearNonei, 30, run(() => {
         this.team = teamsGroup[i]
         Vars.player.team(teamsGroup[i])
     })).size(40);
     },
     addButtonUnit(b, table){
-        table.button(new TextureRegionDrawable(unitsGroup.get(b).create(teamsGroup[0]).icon()), Styles.defaulti, 30, run(() => {
+        table.button(new TextureRegionDrawable(unitsGroup.get(b)./*create(teamsGroup[0]).*/fullIcon), Styles.clearNonei, 30, run(() => {
           this.unitAll.push(b);
         })).size(40);
     },
     buildConfiguration(table) {
+      let t = new Table(Styles.grayPanel);
+      table.add(t).size(0,400);
+      let ti = new Table();
+      let units = new Table();
+      let ti1 = new Table();
+      let ti2 = new Table();
+      let ti3 = new Table();
+      t.add(ti).size(0,40);
+      t.add(units);
       for(var i = 0; i < teamsGroup.length; i++){
-          this.addButtonTeam(i, table)
+          this.addButtonTeam(i, ti)
       };
-      table.row();
+      t.row();
+      let pane = new ScrollPane(units, Styles.smallPane);
+      t.add(pane).size(240);
+      pane.setScrollingDisabled(true, false);
+      pane.setOverscroll(false, false);
+      t.row();
+      t.add(ti1).size(0,40);
+      t.row();
+      t.add(ti2).size(0,40);
+      t.row();
+      t.add(ti3).size(0,40);
       for(var b = 0; b < unitsGroup.size; b++){
-        this.addButtonUnit(b, table);
+        this.addButtonUnit(b, units);
         if(b % 6 == 5){
-            table.row()
+            units.row()
         }
       };
-      table.row();
-      table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-" +"kill")), Styles.defaulti, 30, run(() => {
+      ti1.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-" +"kill")), Styles.clearNonei, 30, run(() => {
         Groups.unit.each(cons(unit => {if(unit!=null&&unit!=undefined){unit.kill()}}))
       })).size(40);
       //Верх
-      table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-up")), Styles.defaulti, 30, run(() => {
+      ti1.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-up")), Styles.clearNonei, 30, run(() => {
         if(this.rY<39){this.spawnY=this.spawnY+8;this.rY=this.rY+8}
       })).size(40);
-      table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-" +"clear")), Styles.defaulti, 30, run(() => {
+      ti1.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-" +"clear")), Styles.clearNonei, 30, run(() => {
         this.unitAll = [];
       })).size(40);
-      table.row();
        //Лево
-      table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-left")), Styles.defaulti, 30, run(() => {
+      ti2.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-left")), Styles.clearNonei, 30, run(() => {
         if(this.rX>-39){this.spawnX=this.spawnX-8;this.rX=this.rX-8}
       })).size(40);
-      table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-" +"play")), Styles.defaulti, 30, run(() => {
+      ti2.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-" +"play")), Styles.clearNonei, 30, run(() => {
         for(var b = 0; b < this.unitAll.length; b++){
           unitsGroup.get(this.unitAll[b]).spawn(this.team, this.spawnX, this.spawnY);
         }
         this.unitAll = [];
       })).size(40);
       //Право
-      table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-right")), Styles.defaulti, 30, run(() => {
+      ti2.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-right")), Styles.clearNonei, 30, run(() => {
         if(this.rX<39){this.spawnX=this.spawnX+8;this.rX=this.rX+8}
       })).size(40);
-      table.row();
-      table.button("", run(() => {})).size(40);
+      ti3.button("", Styles.cleart, run(() => {})).size(40);
       //Низ
-      table.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-down")), Styles.defaulti, 30, run(() => {
+      ti3.button(new TextureRegionDrawable(Core.atlas.find(m.name + "-down")), Styles.clearNonei, 30, run(() => {
         if(this.rY>-39){this.spawnY=this.spawnY-8;this.rY=this.rY-8}
       })).size(40);
-      table.button("", run(() => {this.x=this.x-8;this.drawx=this.drawx-8;})).size(40);
+      ti3.button("", Styles.cleart, run(() =>{})).size(40);
     },
     update(tile){
         if(this.pint <= 0){

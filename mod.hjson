@@ -2,6 +2,6 @@ displayName:"CheatMod"
 name:"cheat"
 description:"Добавляет разные штуки для читов\nhttps://vk.com/mindustry_cheat"
 author:"paulieg626"
-version:"2.4"
+version:"2.5"
 dependencies:[]
-minGameVersion: 136
+minGameVersion: 140

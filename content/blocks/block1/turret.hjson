@@ -6,4 +6,4 @@ alwaysUnlocked:true
 category:turret
 requirements:[
 ]
-research: cheat-wall
+//research: cheat-wall
