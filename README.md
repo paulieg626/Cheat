@@ -5,7 +5,7 @@ En:
 
 `Download: paulieg626/Cheat`
 
-- Fill the core up to 900kk items!!!
+- Fill the core up to 10kk items!!!
 
 - Spawn units who you want!!!
 
@@ -13,7 +13,7 @@ Ru:
 
 `Скачать: paulieg626/Cheat`
 
-- Заполни ядро до 900кк предметов!!!
+- Заполни ядро до 10кк предметов!!!
 
 - Создавайте юнитов, которые хотите!!!
 

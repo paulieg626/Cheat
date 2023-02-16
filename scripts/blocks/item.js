@@ -4,5 +4,5 @@ this.health = Number.MAX_VALUE
 }
 });
 item.update = true;
+item.itemCapacity=10000000;
 item.health = 999999999
-item.itemCapacity=100;

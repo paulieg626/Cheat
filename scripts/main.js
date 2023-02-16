@@ -1,3 +1,9 @@
+//Mod
+var mod = Vars.mods.locateMod("cheat");
+mod.meta.displayName = "[yellow]Cheat[orange]MOD";
+mod.meta.description = "@mod.cheat.description";
+mod.meta.author = "[#ff0][#fff]paulieg626";
+
 //Block
 require("blocks/liquid");
 require("blocks/power");
@@ -12,12 +18,4 @@ require("blocks/cc");
 require("blocks/item");
 require("blocks/skip");
 
-print("$$$$$$$$$$$$$$$$$$$");
-print("Mindustry CheatMod");
-print("by paulieg626");
-print("$$$$$$$$$$$$$$$$$$$");
-
-var mod = Vars.mods.locateMod("cheat");
-mod.meta.displayName = "[yellow]Cheat[orange]MOD";
-mod.meta.description = "@mod.cheat.description";
-mod.meta.author = "[#ff0][#fff]paulieg626";
+print("☆ CheatMod by paulieg626 ☆");

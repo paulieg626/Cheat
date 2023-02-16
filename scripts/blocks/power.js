@@ -1,8 +1,7 @@
 const power=extend(PowerSource,"power", {
-update(tile){
-tile.entity.health = Number.MAX_VALUE
-this.super$update(tile)
+update(){
+this.health = Number.MAX_VALUE
 }
 });
-
+power.update = true;
 power.health = 900000000;

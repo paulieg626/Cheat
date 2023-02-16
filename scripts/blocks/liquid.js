@@ -1,8 +1,8 @@
 const liquid=extend(LiquidSource,"liquid", {
-update(tile){
-tile.entity.health = Number.MAX_VALUE
-this.super$update(tile)
+update(){
+this.health = Number.MAX_VALUE
 }
 });
-liquid.liquidCapacity = 100;
+liquid.update = true;
+liquid.liquidCapacity = 10000000;
 liquid.health = 900000000;
