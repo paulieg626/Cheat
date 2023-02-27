@@ -17,5 +17,6 @@ require("blocks/boost");
 require("blocks/cc");
 require("blocks/item");
 require("blocks/skip");
+require("blocks/command");
 
 print("☆ CheatMod by paulieg626 ☆");

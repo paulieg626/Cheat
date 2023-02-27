@@ -1,0 +1,6 @@
+name: "[#999900]CommandBlock [#ff0000][Cheat]"
+alwaysUnlocked:true
+category: effect
+requirements:[
+]
+research: cheat-wall
